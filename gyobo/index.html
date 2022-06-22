@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교보문구</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="banner">
+      <div class="banner_left"></div>
+      <div class="banner_right"></div>
+      <div class="banner_ad">
+        <img src="img/bnC_top.jpg" alt="banner_top" class="bn_ad">
+        <img src="img/btn_close5.gif" alt="delete_button" class="banner_close">
+      </div>
+    </div>
+    <header>
+      <div class="header_top">
+        <div class="top_center">
+          <ul>
+            <li><a href="#">바로콘 <img src="img/icon_off2.gif" alt="off"></a></li>
+            <li><a href="#">매장안내 <img src="img/top_nav.png" alt="nav"></a></li>
+            <li><a href="#">회원혜택 <img src="img/top_nav.png" alt="nav"></a></li>
+            <li><a href="#">Prestige Lounge</a></li>
+          </ul>
+
+          <ul>
+            <li class="login"><a href="#">로그인</a></li>
+            <li><a href="#">|</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">출석체크</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">주문배송<img src="img/icon_cart.png" alt="cart"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo_header">
+        <div id="header_logo">
+          <img src="img/logo_kyobo.png" alt="header_logo">
+        </div>
+        <div class="header_search">
+          <ul class="search_page1">
+            <li><a href="#">유미의세포들 2</a></li>
+            <li>|</li>
+            <li><a href="#">상반기 베스트셀러</a></li>
+            <li>|</li>
+            <li><a href="#">나를 채우는 시간</a></li>
+            <li>|</li>
+            <li><a href="#">똑똑한 하루</a></li> 
+          </ul>
+          <ul class="search_page2">
+            <li><a href="#">안녕달 신간</a></li>
+            <li>|</li>
+            <li><a href="#">수능완성X벨리곰</a></li>
+            <li>|</li>
+            <li><a href="#">요즘 뭐하세요?</a></li>
+            <li>|</li>
+            <li><a href="#">일잘러X물렁이</a></li>
+          </ul>
+          <div class="next_btn">
+            <img src="img/btn_left.gif" alt="left_button" class="btn_left"><img src="img/btn_right.gif" alt="right_button" class="btn_right">
+          </div>
+          <input type="search" value="무루 추천! 올여름 단 한권의 에세이"><img src="img/btn_search.png" alt="search">
+        </div>
+        <div class="header_ch">
+          <a href="#"><img src="img/bnJ_w03.jpg" alt="bnj"></a>
+          <a href="#"><img src="img/bnG_08.jpg" alt="bng"></a>
+          <a href="#"><img src="img/bnD_w03.jpg" alt="bnd"></a>
+          <a href="#"><img src="img/bnG_02.jpg" alt="bng2"></a>
+          <a href="#"><img src="img/bnO_w03.jpg" alt="bno"></a>
+          <div class="ch_numb">
+            <img src="img/side_left.png" alt="side_left" class="side_left">
+            <img src="img/side_right.png" alt="side_right" class="side_right">
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <script>
+    //jquery
+    //banner close
+    $(function(){
+      $(".banner_close").click(function(){
+        $(".banner").slideUp();
+      });
+    });
+    //javascript
+    //search위에 책 추천
+    const clickLeft = document.querySelector(".btn_left");
+    const clcikRight = document.querySelector(".btn_right");
+    const searchPageOne = document.querySelector(".search_page1");
+    const searchPageTwo = document.querySelector(".search_page2");
+    
+    function clickBtnLeft() {
+      clickLeft.addEventListener("click", e => {
+        searchPageTwo.style.display = 'block';
+        searchPageOne.style.display = 'none';
+      });
+    }
+    clickBtnLeft();
+    function clickBtnRight(){
+      clcikRight.addEventListener("click", e => {
+        searchPageTwo.style.display = 'block';
+        searchPageOne.style.display = 'none';
+      });
+    }
+    clickBtnRight();
+    //search side banner
+    const sideAdLeft = document.querySelectorAll(".header_ch a");
+    function sideAdBtn(){
+      sideAdLeft.addEventListener
+    }
+  </script>
+</body>
+
+</html>
